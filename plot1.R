@@ -12,7 +12,7 @@ electricityuse<-readRDS(file="./edadata/electricityuse.Rda")
 
 ## Open graphics device. Comment next line if you want plots to go to the screen.
 png(file="./plots/plot1.png", width=480, height=480)
-
+par(bg="transparent")
 ## Create the histogam
 hist(
         electrictyuse$Global_active_power, 

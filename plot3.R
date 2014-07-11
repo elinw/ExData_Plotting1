@@ -12,7 +12,7 @@ electricityuse<-readRDS(file="./edadata/electricityuse.Rda")
 
 ## Open graphics device. Comment this line out if you want to go to the window instead.
 png(file="./plots/plot3.png", width=480, height=480)
-
+par(bg="transparent")
 ## Create the histogam
 plot(
         electricityuse$datetime,electrictyuse$Sub_metering_1, 
