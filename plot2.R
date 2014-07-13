@@ -18,7 +18,6 @@ par(bg="transparent")
 plot(
         electricityuse$datetime,electricityuse$Global_active_power, 
         type="l", 
-        main="Global Active Power",
         ylab="Global Active Power (kilowatts)",
         bg="transparent"
 
