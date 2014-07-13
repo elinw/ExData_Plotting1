@@ -16,11 +16,10 @@ png(file="./plots/plot2.png", width=480, height=480)
 ## Create the plot
 par(bg="transparent")
 plot(
-        electricityuse$datetime,electrictyuse$Global_active_power, 
+        electricityuse$datetime,electricityuse$Global_active_power, 
         type="l", 
         main="Global Active Power",
         ylab="Global Active Power (kilowatts)",
-        ##xlab="Date",
         bg="transparent"
 
      )

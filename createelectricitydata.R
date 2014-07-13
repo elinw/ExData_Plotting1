@@ -8,8 +8,8 @@ destfile<-"./edadata/electricity.zip"
 download.file(url=fileUrl,
               destfile=destfile)
 datedownloaded<-date()
-## From Stack Overflow
-## Definte custom date and time classes
+## Idea from Stack Overflow
+## Define custom date and time classes
 setAs("character","myDate", function(from) as.IDate(from, format="%d/%m/%Y") )
 setClass("myDate")
 setAs("character","myTime", function(from) as.ITime(from, format="%H:%M:%S") )

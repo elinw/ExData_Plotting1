@@ -13,19 +13,18 @@ electricityuse<-readRDS(file="./edadata/electricityuse.Rda")
 ## Open graphics device. Comment this line out if you want to go to the window instead.
 png(file="./plots/plot3.png", width=480, height=480)
 par(bg="transparent")
-## Create the histogam
+## Create the plot
 plot(
-        electricityuse$datetime,electrictyuse$Sub_metering_1, 
+        electricityuse$datetime,electricityuse$Sub_metering_1, 
         type="l", 
         col="black",
-        ##main="Submetering",
         ylab="Energy Sub metering",
         xlab="",
         bg="transparent"
      )
 ## Set up the legend
-lines(electricityuse$datetime,electrictyuse$Sub_metering_3,  col="blue")
-lines(electricityuse$datetime,electrictyuse$Sub_metering_2,  col="red")
+lines(electricityuse$datetime,electricityuse$Sub_metering_3,  col="blue")
+lines(electricityuse$datetime,electricityuse$Sub_metering_2,  col="red")
 datanames<-c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 legcolors<-c("black","red", "blue")
 legend( 

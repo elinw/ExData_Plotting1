@@ -17,7 +17,7 @@ par(mfcol=c(2,2), bg="transparent")
 with (electricityuse, 
         {
                 plot(
-                        electricityuse$datetime,electrictyuse$Global_active_power, 
+                        electricityuse$datetime,electricityuse$Global_active_power, 
                         type="l", 
                         ylab="Global Active Power",  
                         bg="transparent"
@@ -25,7 +25,7 @@ with (electricityuse,
                 )
                 
                 plot(
-                        electricityuse$datetime,electrictyuse$Sub_metering_1, 
+                        electricityuse$datetime,electricityuse$Sub_metering_1, 
                         type="l", 
                         col="black",
                         ylab="Energy Sub metering",
@@ -33,8 +33,8 @@ with (electricityuse,
                         bg="transparent"
                 )
                 ## Add a legend
-                lines(electricityuse$datetime,electrictyuse$Sub_metering_3,  col="blue")
-                lines(electricityuse$datetime,electrictyuse$Sub_metering_2,  col="red")
+                lines(electricityuse$datetime,electricityuse$Sub_metering_3,  col="blue")
+                lines(electricityuse$datetime,electricityuse$Sub_metering_2,  col="red")
                 datanames<-c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
                 legcolors<-c("black","red", "blue")
                 
@@ -47,7 +47,7 @@ with (electricityuse,
                 )
                 
                 plot(
-                        electricityuse$datetime,electrictyuse$Voltage, 
+                        electricityuse$datetime,electricityuse$Voltage, 
                         type="l", 
                         main="",
                         ylab="Voltage",
@@ -56,7 +56,7 @@ with (electricityuse,
                 )
         
                 plot(
-                        electricityuse$datetime,electrictyuse$Global_reactive_power, 
+                        electricityuse$datetime,electricityuse$Global_reactive_power, 
                         type="l", 
                         main="",
                         ylab="Global_reactive_power",

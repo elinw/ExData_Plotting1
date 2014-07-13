@@ -15,7 +15,7 @@ png(file="./plots/plot1.png", width=480, height=480)
 par(bg="transparent")
 ## Create the histogam
 hist(
-        electrictyuse$Global_active_power, 
+        electricityuse$Global_active_power, 
         col="red", 
         main="Global Active Power",
         xlab="Global Active Power (kilowatts)",
