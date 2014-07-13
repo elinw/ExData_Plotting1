@@ -19,7 +19,8 @@ with (electricityuse,
                 plot(
                         electricityuse$datetime,electricityuse$Global_active_power, 
                         type="l", 
-                        ylab="Global Active Power",  
+                        ylab="Global Active Power", 
+                        xlab="",
                         bg="transparent"
                         
                 )
@@ -28,7 +29,7 @@ with (electricityuse,
                         electricityuse$datetime,electricityuse$Sub_metering_1, 
                         type="l", 
                         col="black",
-                        ylab="Energy Sub metering",
+                        ylab="Energy sub metering",
                         xlab="",
                         bg="transparent"
                 )
